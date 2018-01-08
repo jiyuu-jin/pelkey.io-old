@@ -5,6 +5,8 @@ export default function Home() {
     <div className="intro">
       <br />
       <br />
+      <br />
+      <br />
       <center>Welcome to the website of Zachary Pelkey</center>
     </div>
   );
