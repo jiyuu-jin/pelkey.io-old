@@ -36,8 +36,14 @@
         text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
       }
 
-      #root{
+      #root {
         background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+      }
+
+      #canv{
+        position: fixed;
+        top: 0;
+        background: transparent
       }
     </style>
 
@@ -128,7 +134,6 @@
             function go(){
                 window.requestAnimationFrame(go);
                 $.clearRect(0, 0, w, h);
-                $.fillStyle = 'hsla(242, 95%, 3%, 1)';
                 $.fillRect(0, 0, w, h);
                 $.fill();
                 for (var i = 0; i < arr.length; ++i) {
